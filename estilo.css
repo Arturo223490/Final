@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poetsen;
+    src: url(../fonts/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: play;
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: poppins-light;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+ 
+    background-color: #A0A0A0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0033a0;
+    color: white;
+    z-index: 10000;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-family: poetsen;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px; 
+    margin-right: 10px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 1.2em;
+    font-family: poetsen;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    margin-left: 15px; 
+}
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+}
+
+.botones-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.botones-nav .boton {
+    background-color: white;
+    color: #0033a0;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.botones-nav .boton:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.clientes {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clientes label {
+    font-weight: bold;
+}
+
+.clientes input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.clientes button[type="submit"] {
+    background-color: #0033a0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.clientes button[type="submit"]:hover {
+    background-color: #002080;
+}

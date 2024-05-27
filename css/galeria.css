@@ -1,0 +1,241 @@
+/* Esto es igual para todas las paginas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poetsen;
+    src: url(../fonts/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: play;
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: poppins-light;
+    background-color: #F4C300;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0033a0;
+    color: white;
+    z-index: 10000;
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-family: poetsen;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px; 
+    margin-right: 10px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 1.2em; 
+    font-family: poetsen;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    margin-left: 15px; 
+}
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+}
+
+.botones-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.botones-nav .boton {
+    background-color: white;
+    color: #0033a0;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.botones-nav .boton:hover {
+    background-color: #e0e0e0;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 70px; 
+}
+
+.galeria-foto {
+    position: relative;
+    width: calc(100% / 3 - 20px); 
+    max-width: 300px; 
+    height: auto; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.galeria-foto:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.galeria-foto:hover .overlay {
+    height: 100%;
+}
+
+.texto {
+    padding: 20px;
+    font-family: poppins-bold;
+    font-size: large;
+}
+
+.footer {
+    background-color: #0033a0;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: play;
+}
+
+.contenedor-pie {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-pie, .links-pie, .redes {
+    width: calc(100% / 3 - 20px); 
+    margin-bottom: 20px;
+}
+
+.info-pie h4, .links-pie h4, .redes h4 {
+    margin-bottom: 20px;
+}
+
+.info-pie p, .links-pie ul, .redes ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-pie p {
+    margin-bottom: 10px;
+}
+
+.links-pie ul li, .redes ul li {
+    margin-bottom: 10px;
+}
+
+.links-pie ul li a, .redes ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links-pie ul li a:hover, .redes ul li a:hover {
+    text-decoration: underline;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes ul li:last-child {
+    margin-right: 0;
+}
+
+.redes ul li a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
